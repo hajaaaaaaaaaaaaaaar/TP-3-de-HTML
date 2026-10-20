@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Déscription" content="Celia esr un assistant virtuel de biblothèque qui répond aux questions sur le les libres, le horaire et les services">
+    <title>Celia — Assistant de la bibliothèque</title>
+</head>
+<body>
+
+    <header>
+        <img src="avatar.png" alt="Avatar de  Celia"  width="100">
+        <h1>L'Assistant Celia</h1>
+    </header>
+    <main>
+        <section>
+        <h2>Préparation</h2>
+        <p>Bonjour ! Je suis Celia votre assistant virtuelde bibliothèque. Je suis là pour vous aider à trouver des informations.</p>
+        </section>
+        <section>
+            <h3>Capacités</h3>
+            <ul>
+                <li>Répondre aux questions sur les livres.</li>
+                <li>Présebter les horaires de la biblothèque.</li>
+                <li>Expliquer les services disponibles.</li>
+                <li>Orienter les utilisateurs vers les bonnes ressources.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Conversation</h3>
+            <p><strong>Vous :</strong> Bonjour Celia !</p>
+            <p><strong>CELIA :</strong> Bonjour ! Comment puis-je vous aider ?</p>
+            <p><strong>Vous :</strong> Peux-tu m'expliquer ce qu'est HTML ?</p>
+            <p><strong>CELIA :</strong> HTML est un langage utilisé pour structurer les pages web.</p>
+            <p><strong>Vous :</strong> Quels sont les éléments principaux d'une page HTML ?</p>
+            <p><strong>CELIA :</strong> Une page HTML contient notamment html, head et body.</p>
+
+            <form action="" method="post">
+
+                <label for="message"> Votre message</label>
+
+                <br>
+
+                <textarea name="message" id="message" rows="4" cols="300" placeholder=" Écrivez votre message..." required ></textarea>
+
+                <br>
+                
+                <button type="submit">Envoyer</button>
+
+            </form>
+
+<br>
+        </section>
+        <aside>
+            <thead>
+            <table border="1">
+                <caption> Questions fréquentes </caption>
+                <thead>
+                    <tr>
+                        <th>Sujet</th>
+                        <th>Exemple de question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>livres</td>
+                        <td>Quels livres sont disponible ?</td>
+                    </tr>
+                    <tr>
+                        <td>horaire</td>
+                        <td>A quelle heure ouvre la bibliothèque ?</td>
+                    </tr>
+                    <tr>
+                        <td>Inscription</td>
+                        <td>Comment m'inscrire à la bibliothèque ?</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>services</td>
+                        <td>Quels services propose la bibliothèque ?</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <br>
+
+            <form action="" method="post">
+                <fieldset >
+                    <legend>Votre avis</legend>
+
+                    <p>Note :</p>
+                    
+                    <input type="radio" name="note" id="n1" value="1" required>
+                    <label for="n1">1</label>
+
+                    <input type="radio" name="note" id="n2" value="2">
+                    <label for="n2">2</label>
+
+                    <input type="radio" name="note" id="n3" value="3">
+                    <label for="n3">3</label>
+
+                    <input type="radio" name="note" id="n4" value="4">
+                    <label for="n4">4</label>
+
+                    <input type="radio" name="note" id="n5" value="5">
+                    <label for="n5">5</label>
+
+                    <br><br>
+
+                    <label for="commantaire">commantaire facultatif :</label>
+
+                    <br><br>
+
+                    <textarea name="commantaire" id="commantaire" rows="3" maxlength="200" placeholder="Écrivez votre avis (200 caractères maximum)..."></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Envoyer mon avis</button>
+
+                </fieldset>
+            </form>
+        </aside>
+    </main>
+
+<footer>
+    <hr>
+    <p>Celia - votre assistant virtuel de bibliothèque.</p>
+    <p>2026 Celia</p>
+</footer>
+    
+</body>
+</html>

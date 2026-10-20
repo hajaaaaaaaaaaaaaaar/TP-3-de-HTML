@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de livres</title>
+</head>
+<body>
+
+    <h1>Recherche un livre</h1>
+
+    <form action="resultats.html" method="get" >
+
+        <label for="livre">Nom du livre :</label>
+        <input type="search" name="livre" id="livre">
+
+        <br><br>
+
+        <label for="genre">Genre :</label>
+        <select name="genre" id="genre" >
+
+            <option value="">--selectioner</option>
+            <option value="Roman">Roman</option>
+            <option value="Science">Science</option>
+            <option value="Histoire">Histoire</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">Rechercher</button>
+        
+    </form>
+    
+</body>
+</html>

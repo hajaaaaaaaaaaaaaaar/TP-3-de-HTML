@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> un formulaire corrigé</title>
+</head>
+<body>
+
+    <h1>formulaire d'inscription</h1>
+
+    <form method="post">
+
+        <!--Erreur 1 : le for du label doit correspondre à l'id du champ, On remplace id="name" par id="nom" -->
+         
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <br><br>
+
+        <!--Erreur 2 : le champ prénom doit avoir un attribut name -->
+
+        <label for="prenom">Prénom :</label> 
+        <input type="text" id="prenom" name="prenom">
+        
+        <br><br>
+
+        <!-- Erreur 3 :On utilise type="email". -->
+        
+        <label for="email">E-mail :</label> 
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <!-- Erreur 4 :On utilise type="password" pour masquer les caractères. -->
+  
+        <label for="mdp">Mot de passe :</label> 
+        <input type="password" id="mdp" name="mdp">
+
+        <br><br>
+
+        <!-- Erreur 5 :les deux boutons radio doivent avoir le même name-->
+
+        <p>Formule :</p> 
+        <input type="radio" id="f1" name="Formule" value="mensuelle"> 
+        <label for="f1">Mensuelle</label>
+        
+        <br>
+
+        <!-- Erreur 6 :on utilise le même name="formule" que le premier bouton. -->
+  
+        <input type="radio" id="f2" name="Formule" value="annuelle"> 
+        <label for="f2">Annuelle</label>
+
+        <br><br>
+        
+        <label for="ville">Ville :</label> 
+
+        <!-- Erreur 7 : le select doit avoir un attribut name-->
+
+        <select id="ville" name="ville"> 
+
+            <option value="">--choisir--</option>
+            <option value="rabat">Rabat</option> 
+            <option value="sale">Salé</option> 
+
+        </select> 
+
+        <br><br>
+        
+        <label for="msg"> Votre message :</label>
+
+        <br>
+
+        <!-- Erreur 8 :On utilise  la balise <textarea>-->
+
+        <textarea name="msg" id="message" rows="4" cols="100" placeholder="Ecrivez ici..."></textarea>
+        
+        <br><br>
+
+        <!-- Erreue 9 : reset efface les données, submit sert à envoyer le formulaire. -->
+
+        <button type="submit">Envoyer</button>
+    
+    </form> 
+    
+</body>
+</html>

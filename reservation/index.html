@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Dar Zitoune </title>
+</head>
+<body>
+
+    <h1>Réserver une table - Dar Zitoune</h1>
+
+    <form  method="post">
+        <fieldset>
+            <legend>Coordonnées</legend>
+
+            <label for="name">Nom :</label>
+            <input type="text" name="name" id="name" minlength="2" required>
+
+            <br><br>
+
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br>
+
+            <label for="tel">Téléphone</label>
+            <input type="tel" name="tel" id="tel" pattern="0[567][0-9]{8}" title="Entrez un numéro marocain de 10 chiffres commençant par 05, 06 ou 07" required>
+
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Réservation</legend>
+
+            <label for="date">Date :</label>
+            <input type="date" name="date" id="date" required>
+
+            <br><br>
+            
+            <label for="time">Heure :</label>
+            <input type="time" name="time" id="time" min="12:00" max="23:00" required>
+
+            <br><br>
+
+            <label for="personnes">nombre de personnes :</label>
+            <input type="number" name="personnes" id="personnes" min="1" max="12" step="1" required>
+
+            <br><br>
+
+            <p>L'emplacement</p>
+
+            <input type="radio" name="emplacement" id="intérieure" value="Salle intérieure" checked>
+            <label for="intérieure"> Salle intérieure</label>
+
+            <br><br>
+
+            <input type="radio" name="emplacement" id="Terrasse" evalue="Terrasse">
+            <label for="Terrasse">Terrasse</label>
+
+            <br><br>
+
+            <label for="Occasion">Occasion</label>
+
+            <select name="Occasion" id="Occasion">
+                <option value="">-- Aucune --</option>
+                <option value="Anniversaire">Anniversaire</option>
+                <option value="Repas d’affaires">Repas d’affaires</option>
+                <option value="Fête de famille">Fête de famille</option>
+            </select>
+
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Options</legend>
+
+            <input type="checkbox" name="option" id="Chaise" value="Chaise bébé">
+            <label for="Chaise">Chaise bébé</label>
+
+            <br><br>
+
+            <input type="checkbox" name="option" id="fauteuil" value="Accès pour fauteuil roulant">
+            <label for="fauteuil">Accès pour fauteuil roulant</label>
+
+            <br><br>
+
+            <input type="checkbox" name="option" id="végétarien" value="Menu végétarien">
+            <label for="végétarien"> Menu végétarien</label>
+
+            <br><br>
+
+            <label for="Demandes">Demandes particulières</label>
+            <textarea name="msg" id="Demandes" rows="4" cols="200" placeholder="Écrivez ici..."></textarea>
+
+            <br>
+
+        </fieldset>
+
+        <br>
+
+            <input type="checkbox" name="accepter"  id="conditions" value="accepter" required>
+            <label for="conditions"> J’accepte les conditions de réservation</label>
+
+            <br><br>
+
+            <button type="submit">Réserver</button>
+
+            <br>
+
+            <button type="reset">Effacer</button>
+
+    </form>
+
+
+
+    
+</body>
+</html>
